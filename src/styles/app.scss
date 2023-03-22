@@ -1,0 +1,39 @@
+@import '_navbar.scss';
+@import '_footer.scss';
+@import '_vars.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            font-weight: bold;
+            &:hover {
+                color: var(--hover-color);
+            }
+        }
+    }
+}
