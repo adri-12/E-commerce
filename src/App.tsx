@@ -1,10 +1,13 @@
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Home from  "./pages/Women";
-import AllItems from "./pages/Men";
-import Contact from "./pages/Kids";
+import Women from  "./pages/Women";
+import Men from "./pages/Men";
+import Kids from "./pages/Kids";
+import Sale from "./pages/Sale";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import SaleBanner from "./components/SaleBanner";
 
 function App() {
 const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -12,10 +15,13 @@ const [toggleNavbar, setToggleNavbar] = useState(false);
     <div className="App">
       <Navbar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar}/>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<AllItems />} />
-        <Route path="/" element={<Contact />} />
+        <Route path="/men" element={<Men />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/kids" element={<Kids />} />
+        <Route path="/sale" element={<Sale />} />
       </Routes>
+      <SaleBanner />
+      <Header />
       <Footer />
     </div>
   );

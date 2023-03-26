@@ -11,7 +11,8 @@ nav {
         justify-content: space-around;
         align-items: center;
         .icons {
-            width: 25%;
+            margin-left: 20px;
+            width: 35%;
             display: flex;
             justify-content: space-between;
             color: white;
@@ -31,8 +32,8 @@ nav {
             }
             .search-icon {
                 position: absolute;
-                top: 22px;
-                right: 275px;
+                top: 28px;
+                right: 290px;
                 color: black;
             }
         }
