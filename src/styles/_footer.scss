@@ -1,4 +1,5 @@
 footer {
+    padding: 20px 0;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -8,9 +9,12 @@ footer {
     align-items: center;
     justify-content: center;
     color: var(--text-color);
-}
-ul{
-    max-width: 30%;
+    h1:hover {
+        color: var(--hover-color);
+    }
+} 
+ul {
+    max-width: 20%;
 li {
     svg {
     cursor: pointer;
@@ -25,6 +29,8 @@ li {
 
 @media screen and (max-width: 768px) {
     footer {
+position: absolute;
+        bottom: 0;
         .container {
             width: 90%;
         }

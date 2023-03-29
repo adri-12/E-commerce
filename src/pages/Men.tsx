@@ -1,7 +1,19 @@
-const AllProducts = () => {
+const Men = () => {
     return ( 
-        <h1>AllItems</h1>
+        <div className="men-container">
+            <ul className="items-categories">
+                <li>
+                    <a href="/sneakers">
+                    <img src="/images/sneakers.webp" alt="sneakers" />
+                    <span>sneakers</span>
+                    </a>
+                    </li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
      );
 }
  
-export default AllProducts;
+export default Men;

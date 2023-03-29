@@ -1,5 +1,5 @@
 .banner {
-    width: 90%;
+    background: var(--hover-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,14 +8,32 @@
     padding: 10px 0;
     .close-icon {
      margin-left: 20px;
+     cursor: pointer;
+     &:hover {
+        color: var(--primary-color);
+     }
     }
     a {
         margin: 0 10px;
         color: black;
         text-decoration: underline;
         &:hover {
-            background: var(--primary-color);
-            color: #cccccc;
+            color: var(--primary-color);
+        }
+    }
+}
+.close {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .banner {
+padding: 10px;
+        .close-icon {
+            margin: 0;
         }
     }
 }

@@ -6,8 +6,7 @@ import Men from "./pages/Men";
 import Kids from "./pages/Kids";
 import Sale from "./pages/Sale";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import SaleBanner from "./components/SaleBanner";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
 const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -15,13 +14,12 @@ const [toggleNavbar, setToggleNavbar] = useState(false);
     <div className="App">
       <Navbar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar}/>
         <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
         <Route path="/kids" element={<Kids />} />
         <Route path="/sale" element={<Sale />} />
       </Routes>
-      <SaleBanner />
-      <Header />
       <Footer />
     </div>
   );

@@ -3,6 +3,7 @@
 @import '_vars.scss';
 @import '_header.scss';
 @import '_banner.scss';
+@import '_men-category.scss';
 
 * {
     margin: 0;
@@ -11,6 +12,9 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+ h1 {
+    color: #fff;
+ }
 }
 a {
     text-decoration: none;

@@ -6,14 +6,14 @@ import { faMagnifyingGlass, faUser, faHeart, faBagShopping} from "@fortawesome/f
 const Navbar = ({ toggleNavbar, setToggleNavbar }: any) => {
     return (
         <nav>
-        <div className="logo">
-            <img src="/logo512.png" alt="logo" />
+        <div>
+            <a href="/"><h1>Logo</h1></a>
         </div>
         <ul className={`nav-links ${toggleNavbar ? 'nav-active' : ''}`}>
-                <li><Link to='/'>MEN</Link></li>
-                <li><Link to='/'>WOMEN</Link></li>
-                <li><Link to='/'>KIDS</Link></li>
-                <li><Link to='/'>SALE</Link></li>
+                <li><Link to='/men'>MEN</Link></li>
+                <li><Link to='/women'>WOMEN</Link></li>
+                <li><Link to='/kids'>KIDS</Link></li>
+                <li><Link to='/sale'>SALE</Link></li>
         </ul>
         <div className="right-container">
             <div className="search-container">

@@ -4,6 +4,9 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: var(--primary-color);
+    h1:hover {
+        color: var(--hover-color);
+    }
     .right-container {
         width: 15%;
         display: flex;
@@ -19,7 +22,7 @@ nav {
             .shop-icons {
                 height: 20px;
                 &:hover {
-                color: black;
+                color: var(--hover-color);
                 cursor: pointer;
                 }
             }
@@ -33,16 +36,11 @@ nav {
             .search-icon {
                 position: absolute;
                 top: 28px;
-                right: 290px;
+                right: 323px;
                 color: black;
             }
         }
     }
-}
-
-.logo img {
-    width: 60px;
-    height: 60px;
 }
 
 .nav-links {
@@ -79,6 +77,7 @@ nav {
     body {
         overflow-x: hidden;
     }
+    nav {
         .nav-links {
             position: absolute;
             right: 0px;
@@ -101,4 +100,15 @@ nav {
         .nav-active {
             transform: translateX(0%);
         }
+        .search-container{
+            display: none;
+        }
+        .right-container {
+            min-width: 40%;
+            .icons {
+                width: 65%;
+                margin: 0;
+            }
+        }
+    }
 }

@@ -5,14 +5,14 @@ const Footer = () => {
     return ( 
         <footer>
             <div className="container">
-            <img className="logo" src=".\logo512.png" alt="logo" />
+            <a href="/"><h1>Logo</h1></a>
             <ul>
                 <li><FontAwesomeIcon icon={faFacebookSquare}/></li>
                 <li><FontAwesomeIcon icon={faTwitterSquare}/></li>
                 <li><FontAwesomeIcon icon={faInstagramSquare}/></li>
             </ul>
             </div>
-            <span>Copyright</span>
+            <span>© 2023 Shop America</span>
         </footer>
      );
 }

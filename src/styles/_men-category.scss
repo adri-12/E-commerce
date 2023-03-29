@@ -1,0 +1,33 @@
+.men-container {
+    width: 1600px;
+    margin: 0 auto;
+    .items-categories {
+        list-style: none;
+        margin-top: 80px;
+li {
+    position: relative;
+    display: inline-block;
+    a {
+        position: relative;
+        display: block;
+        width: 400px;
+        height: 200px;
+    }
+    a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    a span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+    }
+}
+}
+}

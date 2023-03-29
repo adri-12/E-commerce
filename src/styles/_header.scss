@@ -1,6 +1,6 @@
 .header {
     height: 80vh;
-    background-image: url("/images/header-image.jpg") ;
+    background-image: url("/my-app/public/images/header-image.jpg") ;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -12,6 +12,9 @@
         color: black;
         padding: 20px;
         margin: 0 30px;
+        h1 {
+            color: var(--primary-color);
+        }
         button {
             font-weight: bold;
             background: #cccccc;
@@ -31,10 +34,22 @@
             &:hover,
              :focus,
              :active {
+                background: var(--hover-color);
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
                 -webkit-transform: scale(1.1);
                 transform: scale(1.1);
              }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+            button {
+                min-width: 40%;
+                &:nth-of-type(2) {
+                    min-width: 45%;
+                }
+            }
     }
 }
