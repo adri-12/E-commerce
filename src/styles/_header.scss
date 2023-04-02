@@ -1,6 +1,6 @@
 .header {
     height: 80vh;
-    background-image: url("/my-app/public/images/header-image.jpg") ;
+    background-image: url("/images/header.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -15,11 +15,13 @@
         h1 {
             color: var(--primary-color);
         }
+        a {
+            color: #000;
+        }
         button {
             font-weight: bold;
             background: #cccccc;
             border-radius: 5px;
-            width: 15%;
             margin: 10px 0;
             padding: 10px;
             cursor: pointer;
@@ -28,9 +30,6 @@
             transition-duration: 0.3s;
             -webkit-transition-property: box-shadow, transform;
             transition-property: box-shadow, transform;
-            &:nth-of-type(2) {
-                width: 20%;
-            }
             &:hover,
              :focus,
              :active {
@@ -44,12 +43,5 @@
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-            button {
-                min-width: 40%;
-                &:nth-of-type(2) {
-                    min-width: 45%;
-                }
-            }
-    }
+
 }

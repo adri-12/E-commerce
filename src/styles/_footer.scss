@@ -1,7 +1,7 @@
 footer {
     padding: 20px 0;
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background: var(--primary-color);
     display: flex;
@@ -11,8 +11,7 @@ footer {
     color: var(--text-color);
     h1:hover {
         color: var(--hover-color);
-    }
-} 
+    } 
 ul {
     max-width: 20%;
 li {
@@ -26,10 +25,11 @@ li {
     }
 }
 }
+}
 
 @media screen and (max-width: 768px) {
     footer {
-position: absolute;
+position: relative;
         bottom: 0;
         .container {
             width: 90%;

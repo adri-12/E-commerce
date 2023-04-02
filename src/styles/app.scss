@@ -4,6 +4,8 @@
 @import '_header.scss';
 @import '_banner.scss';
 @import '_men-category.scss';
+@import '_items-slider.scss';
+@import '_slider-items-container.scss';
 
 * {
     margin: 0;
@@ -22,6 +24,10 @@ a {
 .logo {
     width: 60px;
     height: 60px;
+}
+.body-container {
+    width: 1600px;
+    margin: 0 auto;
 }
 .container {
     display: flex;

@@ -7,6 +7,7 @@ import Kids from "./pages/Kids";
 import Sale from "./pages/Sale";
 import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
 const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -19,9 +20,11 @@ const [toggleNavbar, setToggleNavbar] = useState(false);
         <Route path="/women" element={<Women />} />
         <Route path="/kids" element={<Kids />} />
         <Route path="/sale" element={<Sale />} />
+        <Route path='/product/:id' element={<ProductDetails />} />
       </Routes>
       <Footer />
     </div>
+    
   );
 }
 
