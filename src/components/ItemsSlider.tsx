@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useGetAllProductsQuery } from "../features/posts/apiSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleLeft,
@@ -7,81 +8,6 @@ import {
   faHeart,
   faArrowRightLong,
 } from "@fortawesome/free-solid-svg-icons";
-
-const items = [
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-  {
-    image: "/shoes1.webp",
-    title: "Samba Classic Shoes",
-    category: "Performance",
-    price: "$75",
-  },
-];
 
 const ItemsSlider = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
@@ -93,6 +19,7 @@ const ItemsSlider = () => {
     setSliderIndex((prevIndex) => prevIndex - 1);
   };
 
+  const { data } = useGetAllProductsQuery(1);
   return (
     <>
       <div className="slider-container body-container">
@@ -134,21 +61,27 @@ const ItemsSlider = () => {
               }
             >
               <ul>
-                {items.map((item, index) => (
-                  <li key={index}>
-                    <a href="#">
-                      <div className="items-on-image">
-                        <img src={item.image} alt="image" />
-                        <FontAwesomeIcon className="star-icon" icon={faStar} />
-                        <span className="price">{item.price}</span>
-                      </div>
-                      <div className="text-under-image">
-                        <span>{item.title}</span>
-                        <span>{item.category}</span>
-                      </div>
-                    </a>
-                  </li>
-                ))}
+                {data &&
+                  (data["men-shoes"] || [])
+                    .concat(data["women-shoes"] || [])
+                    .map((item: any, id: any) => (
+                      <li key={id}>
+                        <a href="#">
+                          <div className="items-on-image">
+                            <img src={item.image} alt="image" />
+                            <FontAwesomeIcon
+                              className="star-icon"
+                              icon={faStar}
+                            />
+                            <span className="price">RON {item.price}</span>
+                          </div>
+                          <div className="text-under-image">
+                            <span>{item.name}</span>
+                            <span>{item.category}</span>
+                          </div>
+                        </a>
+                      </li>
+                    ))}
               </ul>
             </div>
           </div>
@@ -157,4 +90,5 @@ const ItemsSlider = () => {
     </>
   );
 };
+
 export default ItemsSlider;

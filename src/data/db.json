@@ -1,0 +1,88 @@
+{
+    "shoes": {
+    "men-shoes": [
+        {
+            "for": "men",
+            "category": "Lifestyle Shoes",
+            "name": "Go FlyEase",
+            "price": "649.99",
+            "image": "./men-shoes/air-force-1.webp",
+            "id": "0"
+        },
+        {
+            "for": "men",
+            "category": "Lifestyle Shoes",
+            "name": "Air Force 1 '07",
+            "price": "599.99",
+            "image": "./men-shoes/air-force-1.webp",
+            "id": "1"
+        },
+        {
+            "for": "men",
+        "category": "Lifestyle Shoes",
+        "name": "Air Force 1 '07 Premium",
+        "price": "699.99",
+        "image": "./men-shoes/air-force-1-premium.webp",
+        "id": "2"
+        },
+        {
+            "for": "men",
+            "category": "Lifestyle Shoes",
+            "name": "Air Force 1 '07 LV8",
+            "price": "649.99",
+            "image": "./men-shoes/air-force-lv8.webp",
+            "id": "3"
+            },
+            {
+                "for": "men",
+                "category": "Lifestyle Shoes",
+                "name": "Air Max Plus",
+                "price": "929.99",
+                "image": "./men-shoes/air-max-plus.webp",
+                "id": "4"
+                }
+    ],
+    "women-shoes": [
+        {
+            "for": "women",
+            "category": "Lifestyle Shoes",
+            "name": "Air Force 1 '07",
+            "price": "599.99",
+            "image": "./women-shoes/air-force-1.webp",
+            "id": "0" 
+        },
+        {
+            "for": "women",
+            "category": "Lifestyle Shoes",
+            "name": "Court Vision Low Next Nature",
+            "price": "379.99",
+            "image": "./women-shoes/court-vision-low.webp",
+            "id": "1" 
+        },
+        {
+            "for": "women",
+            "category": "Lifestyle Shoes",
+            "name": "Air Force 1 Shadow",
+            "price": "649.99",
+            "image": "./women-shoes/air-force-shadow.webp",
+            "id": "2" 
+        },
+        {
+            "for": "women",
+            "category": "Lifestyle Shoes",
+            "name": "Dunk Low Unlocked By You",
+            "price": "749.99",
+            "image": "./women-shoes/dunk-unlocked.webp",
+            "id": "3" 
+        },
+        {
+            "for": "women",
+            "category": "Lifestyle Shoes",
+            "name": "Court Vision Alta",
+            "price": "429.99",
+            "image": "./women-shoes/court-vision-low.webp",
+            "id": "4" 
+        }
+    ]
+}
+}

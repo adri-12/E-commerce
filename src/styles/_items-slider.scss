@@ -56,8 +56,7 @@ overflow: hidden;
 
 .items-container {
     display: flex;
-    transition: transform 3550ms ease-in-out;
-
+    transition: transform 2550ms ease-in-out;
     li {
         width: 250px;
         position: relative;
@@ -74,8 +73,8 @@ overflow: hidden;
     .items-on-image {
         display: flex;
         span {
-            width: 50px;
-            background: #fff;
+            width: 100px;
+            background: #ffff;
             position: absolute;
             top: 65%;
             left: 3%;
