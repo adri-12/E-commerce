@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useGetAllProductsQuery } from "../features/posts/apiSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faAngleLeft,
   faAngleRight,
@@ -8,6 +8,7 @@ import {
   faHeart,
   faArrowRightLong,
 } from "@fortawesome/free-solid-svg-icons";
+import { useGetAllProductsQuery } from "../store/apiSlice";
 
 const ItemsSlider = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
@@ -19,7 +20,8 @@ const ItemsSlider = () => {
     setSliderIndex((prevIndex) => prevIndex - 1);
   };
 
-  const { data } = useGetAllProductsQuery(1);
+  const { data, isError, error } = useGetAllProductsQuery(1);
+
   return (
     <>
       <div className="slider-container body-container">
@@ -36,7 +38,7 @@ const ItemsSlider = () => {
               <a href="#">Member Exclusives</a>
             </li>
             <div className="right-side-slider">
-              <a href="#">VIEW ALL</a>
+            <Link to="/view-all">VIEW ALL</Link>
               <div>
                 <FontAwesomeIcon
                   className="angle-icons"
