@@ -1,11 +1,5 @@
-.login body {
-    background: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 .login {
+    margin: 5vh auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,12 +7,89 @@
     height: 90vh;
     background: var(--hover-color);
     .container {
+        max-width: 60%;
         flex-direction: column;
-        margin: 0 auto;
         text-align: center;
+        p {
+            color: grey;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        form {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input[type=text] {
+                width: 60%;
+                margin: 5px 0;
+                height: 30px;
+                text-indent: 20px;
+            }
+            input[type=checkbox] {
+                height: 30px;
+                width: 25px;
+            }
+            input[type=date] {
+                width: 60%;
+                height: 30px;
+                color: grey;
+                text-indent: 10px;
+            }
+            #country {
+                width: 60%;
+                height: 30px;
+                color: grey;
+                text-indent: 20px;
+                margin-bottom: 20px;
+            }
+            span {
+                color: grey;
+                font-size: 14px;
+            }
+        }
+        .join-us {
+            margin: 10px 0;
+            width: 60%;
+            height: 30px;
+            background-color: #fff;
+            cursor: pointer;
+            border: 2px solid black;
+            &:hover {
+                background: var(--primary-color);
+                color: var(--hover-color);
+                border-color: #fff;
+            }
+        }
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+    .email-subscription {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
     }
     img {
         margin: 20px 0;
         width: 50px;
     }
+}
+
+.p-light {
+    font-size: 12px;
+}
+
+.gender {
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+input[type=checkbox] {
+    margin: 0 10px;
+}
 }

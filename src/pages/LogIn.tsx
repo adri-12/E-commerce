@@ -31,7 +31,7 @@ const LogIn = () => {
             max={new Date().toISOString().split("T")[0]} // Set max attribute to today's date
             required
           />
-          <span>Get a React Member Reward every year on your Birthday.</span>
+          <p className="p-light">Get a React Member Reward every year on your Birthday.</p>
           <select name="country" id="country">
             <optgroup label="Country/Region">
               {regions.map((regions: any) => (
@@ -43,26 +43,26 @@ const LogIn = () => {
           </select>
           <ul className="gender">
             <li>
-              <input type="button" />
-              <span>Male</span>
+              <input type="checkbox" />
+              <span className="male">Male</span>
             </li>
             <li>
-              <input type="button" />
-              <span>Female</span>
+              <input type="checkbox" />
+              <span className="female">Female</span>
             </li>
           </ul>
           <div className="email-subscription">
-            <input type="checkbox" />
-            <p>
+            <input type="checkbox" className="m-right" />
+            <p className="p-light">
               Sign up for emails to get updates from React on products, offers
               and your Member benefits
             </p>
           </div>
-          <span>
+          <p className="p-light">
             By creating an account, you agree to React's Privacy Policy and
             Terms of Use.
-          </span>
-          <button>Join Us</button>
+          </p>
+          <button className="join-us">Join Us</button>
           <span>
             Already a Member? <a href="/signin">Sign In</a>
           </span>
