@@ -14,6 +14,10 @@ const LandingPage = () => {
       <div className="body-container">
       <FourGridCategory />
       <ItemsSlider />
+      <div className="newsletter">
+        <h2>JOIN OUR REACT CLUB & GET 15% OFF</h2>
+        <button>SIGN UP FOR FREE</button>
+      </div>
       </div>
         </>
      );

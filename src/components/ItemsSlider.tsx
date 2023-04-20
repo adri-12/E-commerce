@@ -13,11 +13,11 @@ import { useGetAllProductsQuery } from "../store/apiSlice";
 const ItemsSlider = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const handlePrevClick = () => {
-    setSliderIndex((prevIndex) => prevIndex + 1);
+    setSliderIndex((prevIndex) => prevIndex - 1);
   };
 
   const handleNextClick = () => {
-    setSliderIndex((prevIndex) => prevIndex - 1);
+    setSliderIndex((prevIndex) => prevIndex + 1);
   };
 
   const { data, isError, error } = useGetAllProductsQuery(1);
