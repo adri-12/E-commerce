@@ -18,6 +18,11 @@ const ItemsSlider = () => {
 
   const handleNextClick = () => {
     setSliderIndex((prevIndex) => prevIndex + 1);
+    if (sliderIndex === data.length - 1) {
+      setSliderIndex(0);
+    } else {
+      setSliderIndex((prevIndex) => prevIndex + 1);
+    }
   };
 
   const { data, isError, error } = useGetAllProductsQuery(1);
@@ -38,7 +43,7 @@ const ItemsSlider = () => {
               <a href="#">Member Exclusives</a>
             </li>
             <div className="right-side-slider">
-            <Link to="/view-all">VIEW ALL</Link>
+              <Link to="/view-all">VIEW ALL</Link>
               <div>
                 <FontAwesomeIcon
                   className="angle-icons"
@@ -58,7 +63,7 @@ const ItemsSlider = () => {
               className="items-container"
               style={
                 {
-                  transform: `translateX(calc(${sliderIndex} * -100%))`,
+                  transform: `translateX(calc(${sliderIndex} * -25%))`,
                 } as React.CSSProperties
               }
             >

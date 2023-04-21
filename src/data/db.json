@@ -3,7 +3,7 @@
     "men-shoes": [
         {
             "for": "men",
-            "category": "Lifestyle Shoes",
+            "category": "Men's Lifestyle Shoes",
             "name": "Go FlyEase",
             "price": "649.99",
             "image": "./men-shoes/air-force-1.webp",
@@ -11,15 +11,15 @@
         },
         {
             "for": "men",
-            "category": "Lifestyle Shoes",
+            "category": "Men's Lifestyle Shoes",
             "name": "Air Force 1 '07",
             "price": "599.99",
             "image": "./men-shoes/air-force-1.webp",
             "id": "1"
         },
         {
-            "for": "men",
-        "category": "Lifestyle Shoes",
+        "for": "men",
+        "category": "Men's Lifestyle Shoes",
         "name": "Air Force 1 '07 Premium",
         "price": "699.99",
         "image": "./men-shoes/air-force-1-premium.webp",
@@ -27,7 +27,7 @@
         },
         {
             "for": "men",
-            "category": "Lifestyle Shoes",
+            "category": "Men's Lifestyle Shoes",
             "name": "Air Force 1 '07 LV8",
             "price": "649.99",
             "image": "./men-shoes/air-force-lv8.webp",
@@ -35,17 +35,65 @@
             },
             {
                 "for": "men",
-                "category": "Lifestyle Shoes",
+                "category": "Men's Lifestyle Shoes",
                 "name": "Air Max Plus",
                 "price": "929.99",
                 "image": "./men-shoes/air-max-plus.webp",
                 "id": "4"
-                }
+                },
+                {
+                "for": "men",
+                "category": "Men Training Shoes",
+                "name": "Metcon 8",
+                "price": "699.99",
+                "image": "./men-shoes/metcon 8webp.webp",
+                "id": "5"
+                },
+                {
+                    "for": "men",
+                    "category": "Men Training Shoes",
+                    "name": "Metcon 8 By You",
+                    "price": "849.99",
+                    "image": "./men-shoes/metcon-8-by-you.webp",
+                    "id": "6"
+                    },
+                    {
+                        "for": "men",
+                        "category": "Men Training Shoes",
+                        "name": "Free Metcon 5",
+                        "price": "649.99",
+                        "image": "./men-shoes/metcon-5.webp",
+                        "id": "7"
+                        },
+                        {
+                            "for": "men",
+                            "category": "Men Training Shoes",
+                            "name": "Air Max Alpha Trainer 5",
+                            "price": "429.99",
+                            "image": "./men-shoes/air-max-trainer.webp",
+                            "id": "8"
+                            },
+                            {
+                                "for": "men",
+                                "category": "Men Training Shoes",
+                                "name": "Legend Essential 3",
+                                "price": "329.99",
+                                "image": "./men-shoes/legend-essential.webp",
+                                "id": "9"
+                                },
+                                {
+                                    "for": "men",
+                                    "category": "Men Training Shoes",
+                                    "name": "Savaleos",
+                                    "price": "649.99",
+                                    "image": "./men-shoes/savaloes.webp",
+                                    "id": "10"
+                                    }
     ],
     "women-shoes": [
         {
             "for": "women",
-            "category": "Lifestyle Shoes",
+            "category": "Women's Lifestyle Shoes",
             "name": "Air Force 1 '07",
             "price": "599.99",
             "image": "./women-shoes/air-force-1.webp",
@@ -53,7 +101,7 @@
         },
         {
             "for": "women",
-            "category": "Lifestyle Shoes",
+            "category": "Women's Lifestyle Shoes",
             "name": "Court Vision Low Next Nature",
             "price": "379.99",
             "image": "./women-shoes/court-vision-low.webp",
@@ -61,7 +109,7 @@
         },
         {
             "for": "women",
-            "category": "Lifestyle Shoes",
+            "category": "Women's Lifestyle Shoes",
             "name": "Air Force 1 Shadow",
             "price": "649.99",
             "image": "./women-shoes/air-force-shadow.webp",
@@ -69,7 +117,7 @@
         },
         {
             "for": "women",
-            "category": "Lifestyle Shoes",
+            "category": "Women's Lifestyle Shoes",
             "name": "Dunk Low Unlocked By You",
             "price": "749.99",
             "image": "./women-shoes/dunk-unlocked.webp",
@@ -77,11 +125,67 @@
         },
         {
             "for": "women",
-            "category": "Lifestyle Shoes",
+            "category": "Women's Lifestyle Shoes",
             "name": "Court Vision Alta",
             "price": "429.99",
             "image": "./women-shoes/court-vision-low.webp",
             "id": "4" 
+        },
+        {
+            "for": "women",
+            "category": "Women's Training Shoes",
+            "name": "Zoom SuperRep 4",
+            "price": "699.99",
+            "image": "./women-shoes/zoom-superrep.webp",
+            "id": "5" 
+        },
+        {
+            "for": "women",
+            "category": "Women's Training Shoes",
+            "name": "Metcon 8",
+            "price": "649.99",
+            "image": "./women-shoes/metcon-8-women.webp",
+            "id": "6" 
+        },
+        {
+            "for": "women",
+            "category": "Women's Training Shoes",
+            "name": "Romaleos 4",
+            "price": "1,049.99",
+            "image": "./women-shoes/romaleos.webp",
+            "id": "7" 
+        },
+        {
+            "for": "women",
+            "category": "Women's Training Shoes",
+            "name": "Zoom Bella",
+            "price": "449.99",
+            "image": "./women-shoes/zoom-bella.webp",
+            "id": "8" 
+        },
+        {
+            "for": "women",
+            "category": "Women's Training Shoes",
+            "name": "Renew In-Season",
+            "price": "379.99",
+            "image": "./women-shoes/renew.webp",
+            "id": "9" 
+        },
+        {
+            "for": "women",
+            "category": "Women's Training Shoes",
+            "name": "Air Monarch IV",
+            "price": "379.99",
+            "image": "./women-shoes/monarch.webp",
+            "id": "10" 
+        },
+        {
+            "for": "women",
+            "category": "Women's Training Shoes",
+            "name": "Metcon 8 AMP",
+            "price": "749.99",
+            "image": "./women-shoes/metcon-8-amp.webp",
+            "id": "11" 
         }
     ]
 }

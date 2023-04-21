@@ -11,12 +11,13 @@ import ViewAll from "./pages/ViewAll";
 import { useSelector } from "react-redux";
 import { RootState } from "./store/indexStore";
 import LogIn from "./pages/LogIn";
+import AllProducts from "./pages/AllProducts";
 
 function App() {
- // const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
+  // const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
   return (
     <div className="App">
-      {window.location.pathname !== '/login' && <Navbar />}
+      {window.location.pathname !== "/login" && <Navbar />}
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/men" element={<Men />} />
@@ -26,8 +27,9 @@ function App() {
         <Route path="/sale" element={<Sale />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/view-all" element={<AllProducts />} />
       </Routes>
-      {window.location.pathname !== '/login' && <Footer />}
+      {window.location.pathname !== "/login" && <Footer />}
     </div>
   );
 }
