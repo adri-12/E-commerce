@@ -11,7 +11,6 @@ import ViewAll from "./pages/ViewAll";
 import { useSelector } from "react-redux";
 import { RootState } from "./store/indexStore";
 import LogIn from "./pages/LogIn";
-import AllProducts from "./pages/AllProducts";
 
 function App() {
   // const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
@@ -27,7 +26,7 @@ function App() {
         <Route path="/sale" element={<Sale />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/login" element={<LogIn />} />
-        <Route path="/view-all" element={<AllProducts />} />
+        <Route path="/view-all" element={<ViewAll />} />
       </Routes>
       {window.location.pathname !== "/login" && <Footer />}
     </div>

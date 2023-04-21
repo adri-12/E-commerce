@@ -1,4 +1,53 @@
 .view-all {
-    background: red;
-    display: flex;
+    margin-top: 50px;
+    .container-view-all {
+        background: var(--primary-color);
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        color: #fff;
+    }
+    .header-products {
+        margin: 0 auto;
+        align-items: center;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .filter-icons {
+        align-items: center;
+        display: flex;
+        width: 250px;
+        justify-content: space-between;
+        span {
+            margin-right: 10px;
+        }
+        .fa-sort-down {
+            height: 20px;
+        }
+    }
+    .view-all-body {
+        display: flex;
+        .filter-slider {
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+            .categories {
+                display: flex;
+                flex-direction: column;
+            }
+            .size {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                }
+            }
+        }
+        .all-shoes {
+            background: red;
+            margin-left: 150px;
+        }
+    }
 }
