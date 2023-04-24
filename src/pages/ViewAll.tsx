@@ -6,6 +6,7 @@ import {
   faAngleUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import ProductCard from "../components/ProductCard";
 
 const ViewAll = () => {
   const shoesSize = [
@@ -35,7 +36,11 @@ const ViewAll = () => {
 
   return (
     <div className="view-all">
-      <div className="container-view-all">
+       <div className="news-banner">
+          <h3>FREE DELIVERY</h3>
+          <span>React Members get free delivery. <a href="#">Learn More</a> <a href="#">Join Us</a> </span>
+        </div>
+      <div className="container-view-all"> 
         <div className="header-products">
           <h2>All Shoes</h2>
           <div className="filter-icons">
@@ -150,7 +155,7 @@ const ViewAll = () => {
           )}
         </div>
         <div className="all-shoes">
-          <h1>All Shoes</h1>
+          <ProductCard />
         </div>
       </div>
     </div>

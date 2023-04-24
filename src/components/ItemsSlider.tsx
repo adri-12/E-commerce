@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import {
   faAngleLeft,
   faAngleRight,
   faStar,
-  faHeart,
   faArrowRightLong,
 } from "@fortawesome/free-solid-svg-icons";
 import { useGetAllProductsQuery } from "../store/apiSlice";
@@ -25,7 +24,7 @@ const ItemsSlider = () => {
     }
   };
 
-  const { data, isError, error } = useGetAllProductsQuery(1);
+  const { data } = useGetAllProductsQuery(1);
 
   return (
     <>

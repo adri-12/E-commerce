@@ -1,0 +1,22 @@
+.product-card {
+    margin: 20px 0;
+    a {
+        color: #000;
+    }
+    ul {
+        list-style: none;
+display: grid;
+grid-template-columns: 4fr 4fr 2fr;
+li {
+    margin: 30px 0;
+    img {
+        width: 502px;
+        height: 502px;
+    }
+}
+    }
+    .description-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

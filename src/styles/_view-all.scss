@@ -1,5 +1,23 @@
 .view-all {
-    margin-top: 50px;
+    margin-top: 10px;
+    .news-banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        h3 {
+            font-weight: normal;
+        }
+        span {
+            font-size: 14px;
+            margin-left: 20px;
+            a {
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+    }
     .container-view-all {
         background: var(--primary-color);
         height: 10vh;
@@ -83,8 +101,7 @@
             }
         }
         .all-shoes {
-            background: red;
-            margin-left: 150px;
+            margin: 0 80px;
         }
     }
 }
