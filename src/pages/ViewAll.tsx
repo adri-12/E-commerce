@@ -7,8 +7,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import ProductCard from "../components/ProductCard";
+import { useGetAllProductsQuery } from "../store/apiSlice";
 
 const ViewAll = () => {
+  const { data } = useGetAllProductsQuery(1);
   const shoesSize = [
     35.5, 36, 36.5, 37.5, 38, 38.5, 39, 40, 40.5, 41, 42, 42.5, 43, 44, 44.5,
     45, 45.5, 46, 47, 47.5, 48.5, 50,
@@ -36,11 +38,14 @@ const ViewAll = () => {
 
   return (
     <div className="view-all">
-       <div className="news-banner">
-          <h3>FREE DELIVERY</h3>
-          <span>React Members get free delivery. <a href="#">Learn More</a> <a href="#">Join Us</a> </span>
-        </div>
-      <div className="container-view-all"> 
+      <div className="news-banner">
+        <h3>FREE DELIVERY</h3>
+        <span>
+          React Members get free delivery. <a href="#">Learn More</a>{" "}
+          <a href="#">Join Us</a>{" "}
+        </span>
+      </div>
+      <div className="container-view-all">
         <div className="header-products">
           <h2>All Shoes</h2>
           <div className="filter-icons">
