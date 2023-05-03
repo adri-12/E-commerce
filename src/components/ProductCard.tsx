@@ -2,6 +2,14 @@ import { useGetAllProductsQuery } from "../store/apiSlice";
 
 const ProductCard = () => {
   const { data } = useGetAllProductsQuery(1);
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+  const filteredCategory = data.shoes["men-shoes"].filter(
+    (shoe: any) => shoe.category === "Lifestyle Shoes"
+  );
+  console.log(filteredCategory);
   return (
     <div className="product-card">
       <ul>
