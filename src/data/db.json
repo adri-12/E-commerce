@@ -2,7 +2,7 @@
     "shoes": {
     "men-shoes": [
         {
-            "for": "men",
+            "for": "Men's Shoe",
             "category": "Lifestyle Shoes",
             "name": "Go FlyEase",
             "price": "649.99",
@@ -10,7 +10,7 @@
             "id": "0"
         },
         {
-            "for": "men",
+            "for": "Men's Shoe",
             "category": "Lifestyle Shoes",
             "name": "Air Force 1 '07",
             "price": "599.99",
@@ -18,7 +18,7 @@
             "id": "1"
         },
         {
-        "for": "men",
+        "for": "Men's Shoe",
         "category": "Lifestyle Shoes",
         "name": "Air Force 1 '07 Premium",
         "price": "699.99",
@@ -26,7 +26,7 @@
         "id": "2"
         },
         {
-            "for": "men",
+            "for": "Men's Shoe",
             "category": "Lifestyle Shoes",
             "name": "Air Force 1 '07 LV8",
             "price": "649.99",
@@ -34,7 +34,7 @@
             "id": "3"
             },
             {
-                "for": "men",
+                "for": "Men's Shoe",
                 "category": "Lifestyle Shoes",
                 "name": "Air Max Plus",
                 "price": "929.99",
@@ -42,7 +42,7 @@
                 "id": "4"
                 },
                 {
-                "for": "men",
+                "for": "Men's Shoe",
                 "category": "Training Shoes",
                 "name": "Metcon 8",
                 "price": "699.99",
@@ -50,7 +50,7 @@
                 "id": "5"
                 },
                 {
-                    "for": "men",
+                    "for": "Men's Shoe",
                     "category": "Training Shoes",
                     "name": "Metcon 8 By You",
                     "price": "849.99",
@@ -58,7 +58,7 @@
                     "id": "6"
                     },
                     {
-                        "for": "men",
+                        "for": "Men's Shoe",
                         "category": "Training Shoes",
                         "name": "Free Metcon 5",
                         "price": "649.99",
@@ -66,7 +66,7 @@
                         "id": "7"
                         },
                         {
-                            "for": "men",
+                            "for": "Men's Shoe",
                             "category": "Training Shoes",
                             "name": "Air Max Alpha Trainer 5",
                             "price": "429.99",
@@ -74,7 +74,7 @@
                             "id": "8"
                             },
                             {
-                                "for": "men",
+                                "for": "Men's Shoe",
                                 "category": "Training Shoes",
                                 "name": "Legend Essential 3",
                                 "price": "329.99",
@@ -82,7 +82,7 @@
                                 "id": "9"
                                 },
                                 {
-                                    "for": "men",
+                                    "for": "Men's Shoe",
                                     "category": "Training Shoes",
                                     "name": "Savaleos",
                                     "price": "649.99",
@@ -92,7 +92,7 @@
     ],
     "women-shoes": [
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Lifestyle Shoes",
             "name": "Air Force 1 '07",
             "price": "599.99",
@@ -100,7 +100,7 @@
             "id": "0" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Lifestyle Shoes",
             "name": "Court Vision Low Next Nature",
             "price": "379.99",
@@ -108,7 +108,7 @@
             "id": "1" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Lifestyle Shoes",
             "name": "Air Force 1 Shadow",
             "price": "649.99",
@@ -116,7 +116,7 @@
             "id": "2" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Lifestyle Shoes",
             "name": "Dunk Low Unlocked By You",
             "price": "749.99",
@@ -124,7 +124,7 @@
             "id": "3" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Lifestyle Shoes",
             "name": "Court Vision Alta",
             "price": "429.99",
@@ -132,7 +132,7 @@
             "id": "4" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Training Shoes",
             "name": "Zoom SuperRep 4",
             "price": "699.99",
@@ -140,7 +140,7 @@
             "id": "5" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Training Shoes",
             "name": "Metcon 8",
             "price": "649.99",
@@ -148,7 +148,7 @@
             "id": "6" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Training Shoes",
             "name": "Romaleos 4",
             "price": "1,049.99",
@@ -156,7 +156,7 @@
             "id": "7" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Training Shoes",
             "name": "Zoom Bella",
             "price": "449.99",
@@ -164,7 +164,7 @@
             "id": "8" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Training Shoes",
             "name": "Renew In-Season",
             "price": "379.99",
@@ -172,7 +172,7 @@
             "id": "9" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Training Shoes",
             "name": "Air Monarch IV",
             "price": "379.99",
@@ -180,7 +180,7 @@
             "id": "10" 
         },
         {
-            "for": "women",
+            "for": "Women's Shoes",
             "category": "Training Shoes",
             "name": "Metcon 8 AMP",
             "price": "749.99",

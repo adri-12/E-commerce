@@ -7,20 +7,23 @@ import "./styles/app.scss";
 import { BrowserRouter } from "react-router-dom";
 import { ApiProvider } from "@reduxjs/toolkit/query/react";
 import { productsApi } from "./store/apiSlice";
-import  store  from "./store/indexStore";
+import store from "./store/indexStore";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Provider store={store}>
-        <ApiProvider api={productsApi}>
-          <App />
-        </ApiProvider>
-      </Provider>
-    </BrowserRouter>
+    <ErrorBoundary fallback="There was an error">
+      <BrowserRouter>
+        <Provider store={store}>
+          <ApiProvider api={productsApi}>
+            <App />
+          </ApiProvider>
+        </Provider>
+      </BrowserRouter>
+    </ErrorBoundary>
   </React.StrictMode>
 );
 

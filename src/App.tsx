@@ -11,23 +11,26 @@ import ViewAll from "./pages/ViewAll";
 import { useSelector } from "react-redux";
 import { RootState } from "./store/indexStore";
 import LogIn from "./pages/LogIn";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
   // const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
   return (
     <div className="App">
       {window.location.pathname !== "/login" && <Navbar />}
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/men" element={<Men />} />
-        <Route path="/view-all" element={<ViewAll />} />
-        <Route path="/women" element={<Women />} />
-        <Route path="/kids" element={<Kids />} />
-        <Route path="/sale" element={<Sale />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
-        <Route path="/login" element={<LogIn />} />
-        <Route path="/view-all" element={<ViewAll />} />
-      </Routes>
+      <ErrorBoundary fallback="There was an Error">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/men" element={<Men />} />
+          <Route path="/view-all" element={<ViewAll />} />
+          <Route path="/women" element={<Women />} />
+          <Route path="/kids" element={<Kids />} />
+          <Route path="/sale" element={<Sale />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/login" element={<LogIn />} />
+          <Route path="/view-all" element={<ViewAll />} />
+        </Routes>
+      </ErrorBoundary>
       {window.location.pathname !== "/login" && <Footer />}
     </div>
   );
