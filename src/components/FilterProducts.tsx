@@ -1,15 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSortDown,
-  faFilter,
-  faAngleDown,
-  faAngleUp,
-} from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
-import {
-  useGetAllProductsQuery,
-} from "../store/apiSlice";
+import { faSortDown, faFilter } from "@fortawesome/free-solid-svg-icons";
+import { useGetAllProductsQuery } from "../store/apiSlice";
 import ProductCard from "./ProductCard";
+import Toggle from "./Toggle";
 
 const FilterProducts = () => {
   const { data } = useGetAllProductsQuery(1);
@@ -17,29 +10,6 @@ const FilterProducts = () => {
     35.5, 36, 36.5, 37.5, 38, 38.5, 39, 40, 40.5, 41, 42, 42.5, 43, 44, 44.5,
     45, 45.5, 46, 47, 47.5, 48.5, 50,
   ];
-  const [openCategories, setOpenCategories] = useState(true);
-  const handleOpenCategories = () => {
-    setOpenCategories(!openCategories);
-  };
-  const [openGender, setOpenGender] = useState(true);
-  const handleOpenGender = () => {
-    setOpenGender(!openGender);
-  };
-  const [openSize, setOpenSize] = useState(true);
-  const handleOpenSize = () => {
-    setOpenSize(!openSize);
-  };
-  const [openShoeHeight, setOpenShoeHeight] = useState(true);
-  const handleOpenShoeHeight = () => {
-    setOpenShoeHeight(!openShoeHeight);
-  };
-  const [openShopPrice, setOpenShopPrice] = useState(true);
-  const handleOpenShopPrice = () => {
-    setOpenShopPrice(!openShopPrice);
-  };
-
-  const [selectCategory, setSelectedCategory] = useState(false);
-
   // const filteredCategories = data.shoes.category.filter(
   //  (shoe: any) => shoe.category === "Lifestyle Shoes"
   // );
@@ -64,21 +34,21 @@ const FilterProducts = () => {
       </div>
       <div className="view-all-body">
         <div className="filter-slider">
-          <span className="filter-categories" onClick={handleOpenCategories}>
-            Categories
-            <FontAwesomeIcon icon={openCategories ? faAngleUp : faAngleDown} />
-          </span>
-          {openCategories && (
+          <Toggle
+            title="Categories"
+            className="filter-categories"
+            isTitleOnlyToggle={true}
+          >
             <div className="categories">
               <span>Lifestyle</span>
               <span>Training</span>
             </div>
-          )}
-          <span className="filter-categories" onClick={handleOpenGender}>
-            Gender
-            <FontAwesomeIcon icon={openGender ? faAngleUp : faAngleDown} />
-          </span>
-          {openGender && (
+          </Toggle>
+          <Toggle
+            isTitleOnlyToggle={true}
+            title="Gender"
+            className="filter-categories"
+          >
             <div className="categories">
               <ul>
                 <li>
@@ -95,14 +65,14 @@ const FilterProducts = () => {
                 </li>
               </ul>
             </div>
-          )}
-          <span className="filter-categories" onClick={handleOpenSize}>
-            Size
-            <FontAwesomeIcon icon={openSize ? faAngleUp : faAngleDown} />
-          </span>
+          </Toggle>
 
-          <div className="size">
-            {openSize && (
+          <Toggle
+            isTitleOnlyToggle={true}
+            title="Size"
+            className="filter-categories"
+          >
+            <div className="size">
               <ul>
                 {shoesSize.map((size) => (
                   <li key={size}>
@@ -110,13 +80,14 @@ const FilterProducts = () => {
                   </li>
                 ))}
               </ul>
-            )}
-          </div>
-          <span className="filter-categories" onClick={handleOpenShoeHeight}>
-            Shoe Height
-            <FontAwesomeIcon icon={openShoeHeight ? faAngleUp : faAngleDown} />
-          </span>
-          {openShoeHeight && (
+            </div>
+          </Toggle>
+
+          <Toggle
+            isTitleOnlyToggle={true}
+            title="Shoe Height"
+            className="filter-categories"
+          >
             <div className="categories">
               <ul>
                 <li>
@@ -133,12 +104,13 @@ const FilterProducts = () => {
                 </li>
               </ul>
             </div>
-          )}
-          <span className="filter-categories" onClick={handleOpenShopPrice}>
-            Shop By Price
-            <FontAwesomeIcon icon={openShopPrice ? faAngleUp : faAngleDown} />
-          </span>
-          {openShopPrice && (
+          </Toggle>
+
+          <Toggle
+            isTitleOnlyToggle={true}
+            title="Shop By Price"
+            className="filter-categories"
+          >
             <div className="categories">
               <ul>
                 <li>
@@ -159,7 +131,7 @@ const FilterProducts = () => {
                 </li>
               </ul>
             </div>
-          )}
+          </Toggle>
         </div>
         <div className="all-shoes">
           <ProductCard />
